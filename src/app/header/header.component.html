@@ -1,0 +1,7 @@
+<ul class="title">
+    <li (click)="getName('nidhal')">Accueil</li>
+    <li>Profile</li>
+    <li>Demandes</li>
+</ul>
+<input type="text" #search placeholder="Search" (keyup)="getName(search.value)" />
+<p>{{ displayName }}</p>
