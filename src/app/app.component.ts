@@ -10,6 +10,7 @@ export class AppComponent {
   count = 0;
   disabled = false;
   isAdmin = true;
+  isAuthenticated = false;
   color = "qsd";
   counter(type:string){
     type === 'add' ? this.count++ : this.count--;
