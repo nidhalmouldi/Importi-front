@@ -1,4 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
-.title {
-    color: red;
+.btn-primary {
+	background-color: #a23099;
+	border-color: #a23099;
+}
+.btn-primary:hover {
+
+}
+.card-primary.card-outline {
+	border-top-color: #a23099;
+}
+.nav-pills .nav-link.active {
+	background-color: #a23099;
+}
+
+.blocs {
+	margin-top: 20px;
+}
+.navbar {
+	border-bottom-color: rgb(0,0,0,.2);
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+.content-wrapper {
+	background-color: #fff;
+}
+.img-agent {
+	width: 30px;
+    margin: 5px;
+}
+.home-card {
+	box-shadow: 0 0 0;
 }
