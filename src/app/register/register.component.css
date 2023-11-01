@@ -1,0 +1,9 @@
+.anonyme-content {
+    margin-left: 0px !important;
+}
+
+.centered-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

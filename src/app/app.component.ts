@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +10,7 @@ export class AppComponent {
   count = 0;
   disabled = false;
   isAdmin = true;
+  isClient = false;
   isAuthenticated = false;
   color = "qsd";
   counter(type:string){
@@ -22,4 +23,18 @@ export class AppComponent {
     {name:'mohamed', telephone: 123456}
   ];
 
+  ngOnInit(){
+    this.resetVariable(this.isAuthenticated);
+  }
+
+  resetVariable(isAuthenticated:boolean){
+    if(isAuthenticated === false){
+      this.isAdmin = this.isClient = false;
+    }else{
+      this.isClient = true;
+    }
+  }
+
 }
+
+

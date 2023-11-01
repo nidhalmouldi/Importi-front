@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-header',
@@ -11,4 +12,5 @@ export class HeaderComponent {
     console.warn(name)
     this.displayName = name
   }
+  @Input() isAuthenticatedHeader: boolean = false;
 }
